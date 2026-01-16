@@ -10,7 +10,6 @@ It performs simple arithmetic operations such as addition, subtraction, multipli
 The calculator takes user input and displays the result instantly.
 
 Features
-
 Addition
 
 Subtraction
