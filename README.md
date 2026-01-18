@@ -69,3 +69,7 @@ Scientific calculator functions
 Keyboard input support
 
 Better UI/UX design
+
+👨‍💻 Author
+
+Pranay Jadhao
