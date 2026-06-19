@@ -1,75 +1,205 @@
 <img width="1907" height="917" alt="Calculator" src="https://github.com/user-attachments/assets/a7cc589a-fd1d-4d7e-88c3-b366db21ce17" />
 
-Project Name
+# Calculator Web Application
 
-JavaScript Calculator
+## 📌 Overview
 
-Description
+This project is a simple and responsive Calculator built using HTML, CSS, and JavaScript. It performs basic arithmetic operations such as addition, subtraction, multiplication, and division through an interactive user interface.
 
-This project is a basic calculator built using JavaScript.
-It performs simple arithmetic operations such as addition, subtraction, multiplication, and division.
-The calculator takes user input and displays the result instantly.
+The calculator uses JavaScript to process user input, display expressions, and calculate results dynamically.
 
-Features
-Addition
+---
 
-Subtraction
+## 🚀 Features
 
-Multiplication
+* Basic arithmetic operations
 
-Division
+  * Addition (+)
+  * Subtraction (-)
+  * Multiplication (*)
+  * Division (/)
+* Clear display functionality
+* Delete last entered character
+* Error handling for invalid expressions
+* User-friendly interface
+* Real-time display updates
 
-Clear / Reset option
+---
 
-User-friendly interface
+## 🛠️ Technologies Used
 
-Technologies Used
+* HTML5
+* CSS3
+* JavaScript (ES6)
 
-HTML – for structure
+---
 
-CSS – for styling
+## 📂 Project Structure
 
-JavaScript – for logic and calculations
+```text
+calculator/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
 
-How It Works
+---
 
-The user clicks number buttons to enter values.
+## 💻 JavaScript Logic
 
-Arithmetic buttons select the operation.
+### Append Input
 
-JavaScript processes the input and performs the calculation.
+```javascript
+function appendToDisplay(input){
+    display.value += input;
+}
+```
 
-The result is displayed on the screen.
-Example Operations
+Adds numbers and operators to the calculator display.
 
-5 + 3 = 8
+---
 
-10 - 4 = 6
+### Clear Display
 
-6 × 7 = 42
+```javascript
+function ClearDisplay(){
+    display.value = "";
+}
+```
 
-20 ÷ 5 = 4
+Clears the entire display.
 
-Use Case
+---
 
-This project is useful for:
+### Calculate Result
 
-Learning JavaScript basics
+```javascript
+function Calculate(){
+    try {
+        display.value = eval(display.value);
+    } catch (error) {
+        display.value = "Error";
+    }
+}
+```
 
-Understanding DOM manipulation
+Evaluates the mathematical expression and displays the result.
 
-Practicing event handling
+---
 
-Beginner-level web development projects
+### Delete Last Character
 
-Future Improvements
+```javascript
+function deleteLast() {
+    display.value = display.value.slice(0, -1);
+}
+```
 
-Scientific calculator functions
+Removes the last entered character from the display.
 
-Keyboard input support
+---
 
-Better UI/UX design
+## ▶️ How to Run
 
-👨‍💻 Author
+### Clone the Repository
+
+```bash
+git clone https://github.com/your-username/calculator-web-app.git
+cd calculator-web-app
+```
+
+### Open the Application
+
+Simply open:
+
+```text
+index.html
+```
+
+in your browser.
+
+No additional installation is required.
+
+---
+
+## 📋 Sample Operations
+
+| Expression | Result |
+| ---------- | ------ |
+| 10 + 5     | 15     |
+| 20 - 8     | 12     |
+| 6 * 7      | 42     |
+| 100 / 4    | 25     |
+
+---
+
+## 🧠 Concepts Covered
+
+* DOM Manipulation
+* Event Handling
+* Functions
+* String Operations
+* Error Handling using try-catch
+* JavaScript Expressions
+* Front-End Web Development
+
+---
+
+## ⚠️ Note
+
+This project uses:
+
+```javascript
+eval()
+```
+
+for expression evaluation.
+
+While suitable for learning purposes, `eval()` is generally not recommended for production applications due to security and performance concerns.
+
+---
+
+## 🔮 Future Improvements
+
+* Scientific Calculator Functions
+* Keyboard Support
+* Dark/Light Theme Toggle
+* Calculation History
+* Percentage Operations
+* Square Root and Power Functions
+* Responsive Mobile Design
+* Replace `eval()` with a safer expression parser
+
+---
+
+## 🎯 Learning Outcomes
+
+Through this project, you will learn:
+
+* JavaScript DOM Manipulation
+* User Interface Interaction
+* Event-Driven Programming
+* Error Handling
+* Building Interactive Web Applications
+
+---
+
+## 👨‍💻 Author
 
 Pranay Jadhao
+
+Electronics & Telecommunication Engineer
+
+Aspiring Software Engineer | Python | JavaScript | SQL
+
+LinkedIn: [www.linkedin.com/in/pranayjadhao](http://www.linkedin.com/in/pranayjadhao)
+
+GitHub: https://github.com/
+
+---
+
+## 📄 License
+
+This project is open-source and available for educational and learning purposes.
