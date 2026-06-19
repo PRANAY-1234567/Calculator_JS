@@ -39,7 +39,6 @@ Arithmetic buttons select the operation.
 JavaScript processes the input and performs the calculation.
 
 The result is displayed on the screen.
-
 Example Operations
 
 5 + 3 = 8
